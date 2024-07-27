@@ -1,0 +1,29 @@
+{
+    # training settings
+    "epochs": 20,
+    "max_iter_EM": 2,  # 1 for training process visulization
+    "print_freq": 4,
+    "resume": "None",
+    "delta": 0.03,  # step size for E-step 
+    "langevin_steps": 5,     # number of steps of langevin  
+    "gpu_id": [1],
+    "lr_GRain": 2e-4,   
+    "lr_GState": 2e-3,   
+    "truncate": 30,
+    "model_dir": "models_save",
+    "log_dir": "logs_save",
+
+    # network settings
+    "out_channels": 3,  
+    "latent_size": 64,  
+    "state_size": 64,  
+    "motion_size": 0,  
+    "feature_state": 64, 
+    "feature_rain_G": 32,    # number of feature for rain generator
+
+    # dataset .mat file
+    "rain_path": "./dataset/rain_layer/rain_man.mat", # *.mat
+
+    # random seed
+    "seed": 0
+}
